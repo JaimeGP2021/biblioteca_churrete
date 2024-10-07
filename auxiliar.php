@@ -88,7 +88,7 @@ function calcula_devolucion($today)
     return ($today->add(new DateInterval('P30D')))->format('d/m/y');
 }
 
-function mostrar_resultado($isbn, $titulo, $id, $nombre, $fecha)
+function mostrar_resultado($titulo, $isbn, $id, $nombre, $fecha)
 { ?>
 <p>El ejemplar de <?= $titulo ?> con ISBN <?= $isbn ?> ha sido sacado por el usuario <?= $nombre ?> con ID <?= $id ?>.</p>
 <p>Tiene hasta el día <?=$fecha?> para devolverlo.</p><?php

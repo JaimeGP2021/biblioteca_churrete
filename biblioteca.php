@@ -23,7 +23,7 @@
         mostrar_mensajes_error($errores);
     } else {
         $fecha = calcula_devolucion($today);
-        mostrar_resultado($isbn, $titulo, $id, $nombre, $fecha);
+        mostrar_resultado($titulo, $isbn, $id, $nombre, $fecha);
     }
 
     ?>
